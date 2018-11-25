@@ -17,7 +17,7 @@ date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: https://aqours.cf
+url: https://wxlee.com
 # 这个baseurl就是个坑
 # baseurl:
 permalink: pretty
