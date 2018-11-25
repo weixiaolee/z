@@ -11,11 +11,11 @@ title:
 author: 博主
 
 menu:
-  home: 首页
-  archives: 全部
-  categories: 分类
-  tags: 标签
-  about: 关于
+  00home: 首页
+  01archives: 全部
+  02categories: 分类
+  03tags: 标签
+  04about: 关于
   search: 搜索
   schedule: 日程表
   sitemap: 站点地图
