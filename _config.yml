@@ -17,9 +17,9 @@ date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: https://weixiaolee.coding.me/blog
+url: https://weixiaolee.coding.me
 # 这个baseurl就是个坑
-#baseurl: 
+baseurl: /blog
 permalink: pretty
 
 # Pagination
