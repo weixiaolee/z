@@ -604,7 +604,7 @@ baidu_push: false
 #  orderBy: startTime
 #  offsetMax: 24
 #  offsetMin: 4
-timezone: +800
+#  timezone: +800
 #  showDeleted: true
 #  singleEvents: true
 #  maxResults: 250
