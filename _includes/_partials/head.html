@@ -5,7 +5,7 @@
 <script>
     (function(){
         if('{{ page.password }}'){
-            if (sha512(sha512(prompt('请输入文章密码'))+'{{ site.salt }}') !== '{{ page.password }}'){
+            if (sha512(sha512(prompt('请输入文章密码'))) !== '{{ page.password }}'){
                 alert('密码错误！');
                 history.back();
             }

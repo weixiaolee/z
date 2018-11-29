@@ -777,7 +777,6 @@ version: 5.1.1
 footer:
   icon: heart
 
-salt: 66ae2792a4a99cdb6215190bc8b2406706f9eec378a5df62ae1b0c0dd7808aaa9daab6be8595d0ad07c4159e7db64a8e9147ff5cfa62b1644af4661707e97812
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-sitemap, jemoji]
 
 timezone: Asia/Shanghai
