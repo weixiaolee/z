@@ -18,6 +18,18 @@ $(document).keydown(function(e){
     }
 });
 
+$(document).ready(function(){
+    var domain = document.domain;
+    var url = document.URL;
+
+    console.log(domain);
+    console.log(url);
+    if (url.indexOf("/poem/") !== -1) {
+        $("body").css("background-image","https://iunique.gitee.io/assets/background/bg_poem.jpg");
+    }
+
+});
+
 
 function hideContent() {
     $(".container.sidebar-position-left").hide();
