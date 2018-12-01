@@ -25,7 +25,7 @@ $(document).ready(function(){
     console.log(domain);
     console.log(url);
     if (url.indexOf("/poem/") !== -1) {
-        $("body").css("background-image","url(https://iunique.gitee.io/assets/background/bg_poem.jpg)");
+        // $("body").css("background-image","url(https://iunique.gitee.io/assets/background/bg_poem.jpg)");
     }
 
 });
