@@ -671,8 +671,20 @@ span#inline-toc {
 //    background-position:center;
 //}
 
-body:before {
+body.bg1:before {
     background: url(https://iunique.gitee.io/assets/background/bg1.jpg) center 0 no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+}
+
+body.bg_poem:before {
+    background: url(https://iunique.gitee.io/assets/background/bg_poem.jpg) center 0 no-repeat;
     background-size: cover;
     position: fixed;
     z-index: -1;
