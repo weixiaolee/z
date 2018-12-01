@@ -1,6 +1,6 @@
 {% if site.baidu_push %}
 <script>
-    if(("https://" + document.domain) === "{% site.url %}"){
+    if(("https://" + document.domain) === "{{ site.url }}"){
         console.log("is" + document.domain)
     }
     else {
