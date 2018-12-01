@@ -21,9 +21,6 @@ $(document).keydown(function(e){
 $(document).ready(function(){
     var domain = document.domain;
     var url = document.URL;
-
-    console.log(domain);
-    console.log(url);
     if (url.indexOf("/poem/") === -1) {
         $("body").removeClass("bg_poem").addClass("bg1");
     }
