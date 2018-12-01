@@ -671,7 +671,7 @@ span#inline-toc {
 //    background-position:center;
 //}
 
-body {
+body:before {
     background: url(https://iunique.gitee.io/assets/background/bg1.jpg) center 0 no-repeat;
     background-size: cover;
     position: fixed;
