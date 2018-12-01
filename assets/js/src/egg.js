@@ -24,9 +24,11 @@ $(document).ready(function(){
 
     console.log(domain);
     console.log(url);
-    $("body").addClass("bg1");
-    if (url.indexOf("/poem/") !== -1) {
-        // $("body").css("background-image","url(https://iunique.gitee.io/assets/background/bg_poem.jpg)");
+    if (url.indexOf("/poem/") === -1) {
+        $("body").removeClass("bg_poem").addClass("bg1");
+    }
+    else {
+        $("body").removeClass("bg1").addClass("bg_poem");
     }
 
 });
