@@ -37,10 +37,7 @@
                   <i class="fa fa-thumb-tack"></i>
                 </span>
               {% endif %}
-              <a class="post-title-link post-title-link-external" target="_blank" href="{{ post.link }}" itemprop="url">
-                {% if post.title %}{{ post.title }}{% else %}{{  post.link }}{% endif %}
-                <i class="fa fa-external-link"></i>
-              </a>
+              <a class="post-title-link post-title-link-external" target="_blank" href="{{ post.link }}" itemprop="url">{% if post.title %}{{ post.title }}{% else %}{{  post.link }}{% endif %}<i class="fa fa-external-link"></i></a>
             {% else %}
             {% if is_index %}
                 {% if post.sticky > 0 %}
@@ -48,9 +45,7 @@
                     <i class="fa fa-thumb-tack"></i>
                   </span>
                 {% endif %}
-                <a class="post-title-link" href="{{ post.url | relative_url }}" itemprop="url">
-                {{ post.title | default: __.post.untitled }}
-              </a>
+                <a class="post-title-link" href="{{ post.url | relative_url }}" itemprop="url">{{ post.title | default: __.post.untitled }}</a>
             {% else %}{{ post.title }}{% endif %}
           {% endif %}
         </{% if site.seo %}h2{% else %}h1{% endif %}>
