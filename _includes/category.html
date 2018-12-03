@@ -21,6 +21,7 @@
           {% assign route = route | append: paginate_path | replace: ':num', page_num %}
         {% endif %}
       {% endif %}
+
       {% include _macro/post-collapse.html %}
     {% endfor %}
   {% endfor %}
