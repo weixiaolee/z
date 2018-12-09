@@ -19,15 +19,10 @@ $(document).keydown(function(e){
 });
 
 $(document).ready(function(){
-    var domain = document.domain;
     var url = document.URL;
-    if (url.indexOf("/poem/") === -1) {
-        $("body").removeClass("bg_poem").addClass("bg1");
+    if (url.indexOf("/poem/") !== -1) {
+        $("body").addClass("bg_poem");
     }
-    else {
-        $("body").removeClass("bg1").addClass("bg_poem");
-    }
-
 });
 
 
