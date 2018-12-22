@@ -126,7 +126,9 @@ index_with_subtitle: true
 menu:
   00home: /
   01archives: /archives/
-#  02poem: /archives/
+  02technology: /classes/#/technology
+  05note: /classes/#/note
+  06read: /classes/#/read
   97categories: /categories/
   98tags: /tags/
   99about: /about/
@@ -149,7 +151,9 @@ menu_icons:
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   00home: home
   01archives: archive
-  02poem: book
+  02technology: desktop
+  05note: sticky-note
+  06read: book
   97categories: th
   98tags: tags
   99about: user
