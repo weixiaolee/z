@@ -14,6 +14,10 @@
   {% capture script_extra %}
     {% include _scripts/pages/pagination.html %}
   {% endcapture %}
+{% when 'classes' %}
+  {% capture script_extra %}
+    {% include _scripts/pages/pagination.html %}
+  {% endcapture %}
 {% when 'tag' %}
   {% capture script_extra %}
     {% include _scripts/pages/pagination.html %}

@@ -20,6 +20,8 @@
   {% capture title %}{{ __.title.archives }} | {{ site.title }}{% endcapture %}
 {% when 'category' %}
   {% capture title %}{{ __.title.category }} | {{ site.title }}{% endcapture %}
+{% when 'classes' %}
+  {% capture title %}{{ __.title.category }} | {{ site.title }}{% endcapture %}
 {% when 'tag' %}
   {% capture title %}{{ __.title.tag }} | {{ site.title }}{% endcapture %}
 {% when 'schedule' %}

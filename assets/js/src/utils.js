@@ -165,6 +165,25 @@ NexT.utils = NexT.$u = {
    */
   addActiveClassToMenuItem: function () {
     var path = window.location.pathname;
+	if(path === '/classes/'){
+		var hash = window.location.hash;
+		var index = window.location.hash.indexOf('/',2);
+		if(index !== -1){
+			hash = hash.substr(0,index);
+		}
+		path = path + hash;
+		
+		var title = document.title;
+		if(title.indexOf(': technology') === 0){
+			document.title = title.replace(': technology','技术');
+		}
+		if(title.indexOf(': note') === 0){
+			document.title = title.replace(': note','笔记');
+		}
+		if(title.indexOf(': read') === 0){
+			document.title = title.replace(': read','阅读');
+		}
+	}
     path = path === '/' ? path : path.substring(0, path.length - 1);
     $('.menu-item a[href^="' + path + '"]:first').parent().addClass('menu-item-active');
   },

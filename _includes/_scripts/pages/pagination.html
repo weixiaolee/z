@@ -22,6 +22,11 @@
         {% assign collections = site.categories %}
         {% assign redirect = '/categories/' | relative_url %}
       {% endif %}
+	  
+	  {% if page.layout == 'classes' %}
+        {% assign collections = site.categories %}
+        {% assign redirect = '/classes/' | relative_url %}
+      {% endif %}
 
       {% if page.layout == 'tag' %}
         {% assign collections = site.tags %}
