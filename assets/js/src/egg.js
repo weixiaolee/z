@@ -13,15 +13,20 @@ $(document).keydown(function(e){
     if(inputString.indexOf("EnterhideblogcontentEnter") !== -1){
         hideContent();
     }
+
     if(inputString.indexOf("EntershowblogcontentEnter") !== -1){
         showContent();
+    }
+
+    if(inputString.indexOf("EnterblograndomEnter") !== -1){
+        window.location.href = "/random/";
     }
 });
 
 $(document).ready(function(){
     var url = document.URL;
-    if (url.indexOf("/poem/") !== -1) {
-        $("body").addClass("bg_poem");
+    if (url.indexOf("/read/") !== -1) {
+        $("body").addClass("bg_read");
     }
 });
 
