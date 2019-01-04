@@ -25,7 +25,7 @@ $(document).keydown(function(e){
 
 $(document).ready(function(){
     var url = document.URL;
-    if (url.indexOf("/read/") !== -1) {
+    if (url.indexOf("/read") !== -1) {
         $("body").addClass("bg_read");
     }
 });
