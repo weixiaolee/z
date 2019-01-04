@@ -129,6 +129,7 @@ menu:
   02technology: /classes/#/technology
   05note: /classes/#/note
   06read: /classes/#/read
+  96random: /random/
   97categories: /categories/
   98tags: /tags/
   99about: /about/
@@ -154,6 +155,7 @@ menu_icons:
   02technology: desktop
   05note: sticky-note
   06read: book
+  96random: random
   97categories: th
   98tags: tags
   99about: user
