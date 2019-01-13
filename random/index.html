@@ -7,13 +7,10 @@ layout: page
 
 <script type="text/javascript">
     var arr = new Array();
-    debugger;
     {% for post in posts %}
-    console.log({{post.random }})
-    {% if post.random != false %}
-    console.log({{post.random }})
-    arr.push('{{ post.url }}');
-    {% endif %}
+        {% if post.random != false %}
+            arr.push('{{ post.url }}');
+        {% endif %}
     {% endfor %}
     window.location.href = arr[parseInt(Math.random()*(arr.length),10)];
 </script>
