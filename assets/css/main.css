@@ -1110,6 +1110,10 @@ body:before { background: url(/assets/background/bg1.jpg) center 0 no-repeat; ba
 
 body.bg_read:before { background: url(/assets/background/bg_poem.jpg) center 0 no-repeat; background-size: cover; position: fixed; z-index: -1; top: 0; right: 0; bottom: 0; left: 0; content: ' '; }
 
+body.honoka1:before { background: url(/assets/background/honoka1.jpg) center 0 no-repeat; background-size: cover; position: fixed; z-index: -1; top: 0; right: 0; bottom: 0; left: 0; content: ' '; }
+
+body.you1:before { background: url(/assets/background/you1.jpg) center 0 no-repeat; background-size: cover; position: fixed; z-index: -1; top: 0; right: 0; bottom: 0; left: 0; content: ' '; }
+
 .links-of-blogroll-title { text-align: center; }
 
 .post-body p a { text-align: center; color: #434343; border-bottom: none; }

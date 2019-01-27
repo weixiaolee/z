@@ -28,6 +28,8 @@ $(document).ready(function(){
     if (url.indexOf("/read") !== -1) {
         $("body").addClass("bg_read");
     }
+
+    urlBgQuery();
 });
 
 
@@ -41,4 +43,34 @@ function showContent() {
     $(".container.sidebar-position-left").show();
     $(".tpwthwidt").show();
     $(".bdshare-slide-button-box.bdshare-slide-style-l5").show();
+}
+
+function getQueryString(name) {
+    var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) {
+        return unescape(r[2]);
+    }
+    return null;
+}
+
+function urlBgQuery() {
+    var bg = getQueryString("bg");
+    var bgArray = ['def', 'bg_read', 'honoka1', 'you1'];
+
+    if (bg != null && bgArray.indexOf(bg) !== -1) {
+        Cookies.set('bg', bg);
+    }
+
+    var cbg = Cookies.get('bg');
+    if (cbg != null && cbg !== ""){
+        if (bgArray.indexOf(cbg) !== -1){
+            for (var i = 0; i < bgArray.length; i++) {
+                $("body").removeClass(bgArray[i]);
+            }
+            if (cbg !== 'def') {
+                $("body").addClass(cbg);
+            }
+        }
+    }
 }
