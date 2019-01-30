@@ -56,7 +56,7 @@ function getQueryString(name) {
 
 function urlBgQuery() {
     var bg = getQueryString("bg");
-    var bgArray = ['def', 'bg_read', 'honoka1', 'you1'];
+    var bgArray = ['aqours', 'bg_read', 'honoka1', 'you1'];
 
     if (bg != null && bgArray.indexOf(bg) !== -1) {
         Cookies.set('bg', bg);
@@ -68,7 +68,7 @@ function urlBgQuery() {
             for (var i = 0; i < bgArray.length; i++) {
                 $("body").removeClass(bgArray[i]);
             }
-            if (cbg !== 'def') {
+            if (cbg !== 'aqours') {
                 $("body").addClass(cbg);
             }
         }
